@@ -1,0 +1,37 @@
+.movieCard {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.movieImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.movieImage:hover {
+  transform: scale(1.05);
+}
+
+.movieTitle {
+  font-family: 'Cutive Mono', monospace;
+  margin-top: 10px;
+  color: var(--text-color);
+}
+
+.darkTitle {
+  color: #fff;
+}
+
+/* Mobile-first approach */
+@media (min-width: 768px) {
+  .movieCard {
+    flex: 1 0 23%;
+  }
+
+  .movieImage {
+    height: 300px;
+    object-fit: cover;
+  }
+}

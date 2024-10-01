@@ -1,0 +1,18 @@
+.light {
+  --primary: #ffffff;
+  --background: #f0f0f0;
+  --text-color: #000000;
+}
+
+.dark {
+  --primary: #1b1b1b;
+  --background: #121212;
+  --text-color: #ffffff;
+}
+
+.main {
+  background-color: var(--background);
+  color: var(--text-color);
+  padding: 20px;
+  min-height: 100vh;
+}

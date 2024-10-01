@@ -1,0 +1,10 @@
+.toggleButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}

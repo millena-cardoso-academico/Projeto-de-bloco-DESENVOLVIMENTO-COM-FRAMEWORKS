@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--primary);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.logo {
+  font-family: 'Spicy Rice', cursive;
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.slogan {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.navList li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: var(--text-color);
+}
+
+.navList li:hover {
+  color: var(--hover-color);
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 3rem;
+  }
+
+  .slogan {
+    font-size: 1.2rem;
+  }
+
+  .navList {
+    gap: 20px;
+  }
+}
+
+.dark .header {
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+.dark .logo {
+  color: #ff9800;
+}
+
+.dark .slogan {
+  color: #cfd8dc;
+}
+
+.dark .navList li {
+  color: #cfd8dc;
+}
+
+.dark .navList li:hover {
+  color: #ff9800;
+}
